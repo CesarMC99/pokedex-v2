@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", san-serif;
+}
+
+html {
+  @apply font-poppins
+}
+
