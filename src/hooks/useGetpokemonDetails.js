@@ -11,7 +11,7 @@ export const useGetpokemonDetails = () => {
   const {pokemonList, isLoadingPokemonList, isErrorPokemonList} = useGetPokemonList();
 
   const limit = 9;
-  const maxPages = Math.ceil(pokemonList?.results.length / 9);
+  const maxPages = Math.ceil(pokemonList?.results.length / limit);
 
   const pokemonDetailsQueries = useQueries({
     queries: pokemonList
