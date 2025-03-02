@@ -1,23 +1,9 @@
-export const Pagination = ({ currentPage, previousPage, nextPage, maxPages }) => {
-// export const Pagination = ({ maxPages }) => {
-
-//   const [currentPage, setCurrentPage] = useState(1)
-
-//   const previousPage = () => {
-//     if(currentPage === 1) return;
-//     setCurrentPage(prevPage => prevPage - 1);
-//   }
-
-//   const nextPage = () => {
-//     if(currentPage === maxPages) return;
-//     setCurrentPage(prevPage => prevPage + 1);
-//   }
-
+export const Pagination = ({ currentPage, previousPage, nextPage }) => {
   return (
-    <div>
-      <button onClick={previousPage}>{"<"}</button>
-      <div>{currentPage}</div>
-      <button onClick={nextPage}>{">"}</button>
+    <div className="flex">
+      <button className="text-white text-4xl font-semibold bg-purple-600 border-3 border-r-0 p-2 cursor-pointer rounded-tl-2xl rounded-bl-2xl" onClick={previousPage}>{"<"}</button>
+      <div className="text-white text-2xl content-center font-semibold bg-purple-600 border-3 border-r-0 border-l-0 p-2">{currentPage}</div>
+      <button className="text-white text-4xl font-semibold bg-purple-600 border-3 border-l-0 p-2 cursor-pointer rounded-tr-2xl rounded-br-2xl" onClick={nextPage}>{">"}</button>
     </div>
   )
 }

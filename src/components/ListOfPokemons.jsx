@@ -1,8 +1,9 @@
 import { CardOfPokemon } from "./CardOfPokemon";
+import { Loader } from "./Loader";
 
 export const ListOfPokemons = ({ pokemons, isLoading, isError}) => {
 
-  if (isLoading) return <div>Loading...</div> ;
+  if (isLoading) return <Loader tamaño="100vh"/> ;
 
   if (isError) return <div>Error occurred while fetching users.</div>;
 
