@@ -12,7 +12,7 @@ export const useGetTypesListDetails = () => {
   })
 
   const typesURLS = typesList?.results.filter(type => (
-    type.name === "stellar" || type.name === "unknown"
+    type.name === "stellar" || type.name === "unknown" || type.name === "shadow"
     ? false
     : true
   ));
